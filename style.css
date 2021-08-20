@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Share+Tech+Mono&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: rgb(255, 255, 255);
+  transition: 0.5s all;
+}
+body {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background: #1b2631;
+}
+.main {
+  height: 85%;
+  width: 50%;
+  background: linear-gradient(
+    0deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgb(9, 61, 121) 60%,
+    rgb(253, 253, 253) 150%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: 0.1px 4px 8px 2px rgba(0, 0, 0, 0.1);
+}
+
+/*top part*/
+.top {
+  width: 80%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#output {
+  width: 66%;
+  height: 100%;
+  background: #1b2631;
+  text-align: center;
+  font-size: 22px;
+  color: #fff;
+  overflow-x: hidden;
+  border-radius: 5px;
+  border: 1px solid rgb(6, 141, 252);
+  outline: none;
+  box-shadow: 0.1px 4px 8px 2px rgba(0, 0, 0, 0.1);
+}
+.top button {
+  width: 17%;
+  height: 100%;
+  cursor: pointer;
+  border: 1px solid rgb(6, 141, 252);
+  outline: none;
+  font-size: 20px;
+  background: #1b2631;
+  border-radius: 5px;
+  transition: background-color 650ms;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.top button:hover {
+  background-color: #4ca0af;
+}
+
+#char_num {
+  padding: 10px;
+  width: 15%;
+  height: 100%;
+  outline: none;
+  border: 1px solid rgb(6, 141, 252);
+  font-size: 22px;
+  background: #1b2631;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0.1px 4px 8px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* detail part */
+.detail {
+  width: 80%;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  border: none;
+  padding: 2px 10px;
+}
+.detail p {
+  color: rgb(255, 255, 255);
+  margin: 0 5px;
+}
+
+/*password_generate button*/
+#password_generate {
+  width: 30%;
+  height: 50px;
+  cursor: pointer;
+  border: 1px solid rgb(6, 141, 252);
+  font-size: 20px;
+  outline: none;
+  background: #1b2631;
+  border-radius: 5px;
+  transition: background-color 650ms;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#password_generate:hover {
+  background-color: #4ca0af;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.container {
+  width: 130%;
+  padding: 2.5rem;
+  display: flex;
+  border-radius: 2rem;
+  justify-content: space-evenly;
+  padding: 70px;
+  margin: 0 0.5rem;
+  font-size: 2rem;
+  transition: all 0.25s;
+}
+
+.fa-github:hover {
+  border-radius: 80px;
+  background-color: #4ca0af;
+}
+
+.fa-twitter:hover {
+  border-radius: 80px;
+  background-color: #4ca0af;
+}
+
+.fa-instagram:hover {
+  border-radius: 25px;
+  background-color: #4ca0af;
+}
+
+.fa-linkedin:hover {
+  border-radius: 25px;
+  background-color: #4ca0af;
+}
+
+/*checkbox options */
+.options {
+  width: 80%;
+  padding: 20px 0;
+  margin: 40px 0;
+}
+.options ul li {
+  margin: 10px 0;
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgb(6, 141, 252);
+  display: flex;
+  align-items: center;
+  padding: 0 5px;
+  background: #1b2631;
+  border-radius: 5px;
+}
+.options ul li:hover {
+  background: #4ca0af;
+}
+input[type="checkbox"] {
+  display: none;
+}
+.options ul li #icon {
+  height: 20px;
+  width: 20px;
+  border: 1px solid rgb(6, 141, 252);
+  border-radius: 50%;
+}
+.options ul li label:not(:last-child) {
+  width: 95%;
+  height: 100%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+  font-size: 20px;
+  padding: 0 0 0 10px;
+}
+input[type="checkbox"]:checked ~ #icon {
+  background: radial-gradient(
+    circle,
+    rgb(0, 217, 255) 0%,
+    rgb(70, 82, 252) 100%
+  );
+  border: 1px solid rgb(6, 141, 252);
+}
